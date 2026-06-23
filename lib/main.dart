@@ -1,0 +1,18 @@
+import 'package:flutter/material.dart';
+import 'package:mycalculator/homescreen.dart';
+
+void main() {
+  runApp(mycal());
+}
+
+class mycal extends StatelessWidget {
+  const mycal({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      initialRoute: homescreen.id,
+      routes: {homescreen.id: (context) => homescreen()},
+    );
+  }
+}
