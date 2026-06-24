@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mycalculator/readmore.dart';
 
 class fontawesome extends StatefulWidget {
   static const String id = "Fonts";
@@ -30,7 +31,32 @@ class _fontawesomeState extends State<fontawesome> {
       ),
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
-        children: [Container(child: FaIcon(FontAwesomeIcons.shopify))],
+        children: [
+          Container(
+            height: 240,
+            width: 240,
+
+            decoration: BoxDecoration(
+              color: Colors.black45,
+              shape: BoxShape.circle,
+            ),
+            child: Center(
+              child: Badge(
+                label: Text("9+", style: TextStyle(color: Colors.black45)),
+                backgroundColor: Colors.white70,
+                offset: Offset(8, -8),
+                child: FaIcon(
+                  FontAwesomeIcons.shopify,
+                  size: 30,
+                  color: Colors.green,
+                ),
+              ),
+            ),
+          ),
+          TextButton(onPressed: () {
+            Navigator.pushNamed(context, read.id);
+          }, child: Text("Tap here for Next")),
+        ],
       ),
     );
   }
