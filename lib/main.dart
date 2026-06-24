@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mycalculator/homescreen.dart';
+import 'package:mycalculator/badges.dart';
+import 'package:mycalculator/fontawesome.dart';
 
 void main() {
   runApp(mycal());
@@ -12,7 +13,10 @@ class mycal extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: homescreen.id,
-      routes: {homescreen.id: (context) => homescreen()},
+      routes: {homescreen.id: (context) => homescreen(),
+        fontawesome.id :(context)=> fontawesome(),
+      },
+
     );
   }
 }
