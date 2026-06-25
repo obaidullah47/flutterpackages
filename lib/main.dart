@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mycalculator/animatedtext.dart';
 import 'package:mycalculator/badges.dart';
 import 'package:mycalculator/fontawesome.dart';
 import 'package:mycalculator/readmore.dart';
@@ -17,6 +18,7 @@ class mycal extends StatelessWidget {
       routes: {homescreen.id: (context) => homescreen(),
         fontawesome.id :(context)=> fontawesome(),
         read.id : (context)=> read(),
+        animation.id : (context)=> animation(),
       },
 
     );

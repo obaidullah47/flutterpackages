@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:mycalculator/animatedtext.dart';
 import 'package:readmore/readmore.dart';
 
 class read extends StatefulWidget {
@@ -43,6 +45,12 @@ class _readState extends State<read> {
                 colorClickableText: Colors.teal,
               ),
             ),
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.pushNamed(context, animation.id);
+            },
+            child: Text("Tap here for next"),
           ),
         ],
       ),
