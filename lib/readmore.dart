@@ -17,7 +17,7 @@ class _readState extends State<read> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Pub Dev",
+          "ReadMore Text",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white70),
         ),
         flexibleSpace: Container(

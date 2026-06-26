@@ -17,6 +17,7 @@ class _homescreenState extends State<homescreen> {
       length: 5,
       child: Scaffold(
         appBar: AppBar(
+
           actions: [
             Badge(
               offset: Offset(8, -8),
@@ -34,7 +35,7 @@ class _homescreenState extends State<homescreen> {
             SizedBox(width: 10),
           ],
           title: Text(
-            "Pub Dev",
+            "Badges",
             style: TextStyle(
               fontWeight: FontWeight.bold,
               color: Colors.white70,

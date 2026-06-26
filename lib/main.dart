@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mycalculator/animatedtext.dart';
 import 'package:mycalculator/badges.dart';
 import 'package:mycalculator/fontawesome.dart';
+import 'package:mycalculator/pincode.dart';
 import 'package:mycalculator/readmore.dart';
 
 void main() {
@@ -19,6 +20,7 @@ class mycal extends StatelessWidget {
         fontawesome.id :(context)=> fontawesome(),
         read.id : (context)=> read(),
         animation.id : (context)=> animation(),
+        pincode.id : (context)=> pincode(),
       },
 
     );

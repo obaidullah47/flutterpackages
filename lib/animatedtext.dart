@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
+import 'package:mycalculator/pincode.dart';
 
 class animation extends StatefulWidget {
   static const String id = "animation";
@@ -14,6 +15,7 @@ class _animationState extends State<animation> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text("Text Animations",style: TextStyle(fontSize: 25,color: Colors.white.withOpacity(0.5),fontWeight: FontWeight.bold)),
         backgroundColor: Color(0xff000c40).withOpacity(0.75),
         iconTheme: IconThemeData(color: Colors.white70),
       ),
@@ -161,7 +163,11 @@ class _animationState extends State<animation> {
                 ),
               ],
             ),
+
           ),
+          TextButton(onPressed: (){
+            Navigator.pushNamed(context, pincode.id);
+          }, child: Text("press me for more"))
         ],
       ),
     );

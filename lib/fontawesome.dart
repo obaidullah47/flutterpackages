@@ -16,7 +16,7 @@ class _fontawesomeState extends State<fontawesome> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          "Pub Dev",
+          "Font Awesome",
           style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white70),
         ),
         flexibleSpace: Container(
